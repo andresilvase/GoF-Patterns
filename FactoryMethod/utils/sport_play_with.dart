@@ -1,0 +1,4 @@
+enum PlayWith {
+  hands,
+  foot,
+}
