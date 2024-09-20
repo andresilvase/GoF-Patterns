@@ -1,9 +1,9 @@
+import 'concreteFactories/socorro_veiculo_pequeno.dart';
 import 'abstractFactory/auto_socorro_abstract_factory.dart';
 import 'concreteFactories/socorro_veiculo_grande.dart';
 import 'concreteFactories/socorro_veiculo_medio.dart';
-import 'concreteFactories/socorro_veiculo_pequeno_factory.dart';
-import 'concreteProducts/guincho_concrete_product.dart';
-import 'concreteProducts/veiculo_concrete_product.dart';
+import 'abstractProducts/guincho.dart';
+import 'abstractProducts/veiculo.dart';
 import 'utils/enum_veiculo_porte.dart';
 
 class AutoSocorro {
@@ -12,8 +12,8 @@ class AutoSocorro {
     _guincho = factory.criarGuincho();
   }
 
+  late GuinchoAbstract _guincho;
   late Veiculo _veiculo;
-  late Guincho _guincho;
 
   void realizarAtendimento() {
     _guincho.socorrer(_veiculo);

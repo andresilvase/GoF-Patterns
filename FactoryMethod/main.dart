@@ -1,5 +1,5 @@
-import 'abstract/abstract_factory_creator.dart';
-import 'concrete/concrete_factory_creator.dart';
+import 'abstract/abstract_creator.dart';
+import 'concrete/concrete_creator.dart';
 import 'sport_descriptor.dart';
 
 void runFactoryMethod() {

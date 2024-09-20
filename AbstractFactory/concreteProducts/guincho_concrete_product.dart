@@ -1,6 +1,6 @@
 import '../abstractProducts/guincho.dart';
+import '../abstractProducts/veiculo.dart';
 import '../utils/enum_veiculo_porte.dart';
-import 'veiculo_concrete_product.dart';
 import '../utils/porte_extension.dart';
 
 class Guincho extends GuinchoAbstract {
