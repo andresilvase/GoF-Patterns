@@ -1,4 +1,4 @@
-import '../Singleton/database_singleton.dart';
+import 'database_singleton.dart';
 
 void runSingleton() {
   print('\n##Singleton running example:');

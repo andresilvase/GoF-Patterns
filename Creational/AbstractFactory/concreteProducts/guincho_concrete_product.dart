@@ -1,7 +1,6 @@
 import '../abstractProducts/guincho.dart';
 import '../abstractProducts/veiculo.dart';
 import '../utils/enum_veiculo_porte.dart';
-import '../utils/porte_extension.dart';
 
 class Guincho extends GuinchoAbstract {
   Guincho(this.porte) : super(porte);
@@ -12,7 +11,7 @@ class Guincho extends GuinchoAbstract {
   @override
   void socorrer(Veiculo veiculo) {
     print(
-      'Socorrendo carro ${veiculo.porte.tostring()} - modelo ${veiculo.modelo}.',
+      'Socorrendo carro ${veiculo.porte.name} - modelo ${veiculo.modelo}.',
     );
   }
 }
