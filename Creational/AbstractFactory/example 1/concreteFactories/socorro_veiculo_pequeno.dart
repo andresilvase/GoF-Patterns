@@ -3,7 +3,7 @@ import '../concreteProducts/guincho_concrete_product.dart';
 import '../concreteProducts/veiculo_concrete_product.dart';
 import '../abstractProducts/guincho.dart';
 import '../abstractProducts/veiculo.dart';
-import '../utils/enum_veiculo_porte.dart';
+import '../../utils/enum_veiculo_porte.dart';
 
 class SocorroVeiculoPequenoFactory extends AutoSocorroAbstractFactory {
   @override

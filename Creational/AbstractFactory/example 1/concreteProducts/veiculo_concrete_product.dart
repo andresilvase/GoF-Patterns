@@ -1,7 +1,7 @@
 // ignore_for_file: overridden_fields
 
 import '../abstractProducts/veiculo.dart';
-import '../utils/enum_veiculo_porte.dart';
+import '../../utils/enum_veiculo_porte.dart';
 
 class Fusion implements Veiculo {
   Fusion({

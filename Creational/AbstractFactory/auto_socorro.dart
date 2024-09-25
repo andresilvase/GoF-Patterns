@@ -1,9 +1,9 @@
-import 'concreteFactories/socorro_veiculo_pequeno.dart';
-import 'abstractFactory/auto_socorro_abstract_factory.dart';
-import 'concreteFactories/socorro_veiculo_grande.dart';
-import 'concreteFactories/socorro_veiculo_medio.dart';
-import 'abstractProducts/guincho.dart';
-import 'abstractProducts/veiculo.dart';
+import 'example 1/concreteFactories/socorro_veiculo_pequeno.dart';
+import 'example 1/abstractFactory/auto_socorro_abstract_factory.dart';
+import 'example 1/concreteFactories/socorro_veiculo_grande.dart';
+import 'example 1/concreteFactories/socorro_veiculo_medio.dart';
+import 'example 1/abstractProducts/guincho.dart';
+import 'example 1/abstractProducts/veiculo.dart';
 import 'utils/enum_veiculo_porte.dart';
 
 class AutoSocorro {
