@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:GoF-Patterns}/Behavioural/Swift/Observer",
+            "name": "Debug Observer (Behavioural/Swift/Observer)",
+            "program": "${workspaceFolder:GoF-Patterns}/Behavioural/Swift/Observer/.build/debug/Observer",
+            "preLaunchTask": "swift: Build Debug Observer (Behavioural/Swift/Observer)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:GoF-Patterns}/Behavioural/Swift/Observer",
+            "name": "Release Observer (Behavioural/Swift/Observer)",
+            "program": "${workspaceFolder:GoF-Patterns}/Behavioural/Swift/Observer/.build/release/Observer",
+            "preLaunchTask": "swift: Build Release Observer (Behavioural/Swift/Observer)"
+        }
+    ]
+}
