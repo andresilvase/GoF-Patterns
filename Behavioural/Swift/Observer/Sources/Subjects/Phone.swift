@@ -28,6 +28,7 @@ struct Phone {
         for i in 1...12 {
             let button: Button = Button(digit: "\(i)")
             self.buttons.append(button)
+
         }
     }
 

@@ -1,5 +1,3 @@
-import 'object.dart';
-
 abstract class ObjectBuilder {
   ObjectBuilder setSmartphoneMemoryStorage(int memoryStorage);
   ObjectBuilder setSmartphoneRamProcessor(int ramProcessor);
@@ -7,5 +5,5 @@ abstract class ObjectBuilder {
   ObjectBuilder setSmartphoneBatterymA(int mA);
   ObjectBuilder setSmartphoneName(String name);
 
-  Smartphone build();
+  build();
 }

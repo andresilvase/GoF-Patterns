@@ -55,8 +55,7 @@ class Smartphone {
 
   String toJson() => json.encode(toMap());
 
-  factory Smartphone.fromJson(String source) =>
-      Smartphone.fromMap(json.decode(source) as Map<String, dynamic>);
+  factory Smartphone.fromJson(String source) => Smartphone.fromMap(json.decode(source) as Map<String, dynamic>);
 
   @override
   String toString() {
@@ -76,10 +75,6 @@ class Smartphone {
 
   @override
   int get hashCode {
-    return memoryStorage.hashCode ^
-        ramProcessor.hashCode ^
-        cameraPxls.hashCode ^
-        batterymA.hashCode ^
-        name.hashCode;
+    return memoryStorage.hashCode ^ ramProcessor.hashCode ^ cameraPxls.hashCode ^ batterymA.hashCode ^ name.hashCode;
   }
 }

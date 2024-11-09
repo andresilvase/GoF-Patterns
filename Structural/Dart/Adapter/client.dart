@@ -12,16 +12,12 @@ class HandHeldCalculator extends Calculator {
       return result;
     } else if (operation == "/") {
       final result = a / b;
-
       print("Operation: $operation - Using class own abilities... $result");
-
       return result;
     } else if (operation == "+" || operation == "-") {
       calculatorAdpter = CalculatorAdpter();
       final result = calculatorAdpter.performOperation(a, b, operation);
-
       print("Operation: $operation - Using adpteed class abilities... $result");
-
       return result;
     }
 
