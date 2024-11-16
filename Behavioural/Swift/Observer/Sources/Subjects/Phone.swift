@@ -6,33 +6,46 @@
 //
 
 struct Button: Observer {
-    let digit: String
-
-    init(digit: String) {
-        self.digit = digit
-    }
-
     func update(msg: String) {
-        print(msg)
+        print(msg, terminator: "")
     }
 }
 
+// This is not a good approach to the pattern Observer since the notification is being sent
+// to only a specific observer. But still hold the all framework of how the pattern works!
 struct Phone {
-    var buttons: [Observer] = []
+    var buttons: [String: Observer] = [:]
 
     init() {
         self.addButtons()
     }
 
+    // Subscription
     mutating private func addButtons() {
         for i in 1...12 {
-            let button: Button = Button(digit: "\(i)")
-            self.buttons.append(button)
+            var digit: String
 
+            if i == 10 {
+                digit = "*"
+            } else if i == 11 {
+                digit = "0"
+            } else if i == 12 {
+                digit = "#"
+            } else {
+                digit = "\(i)"
+            }
+
+            buttons[digit] = Button()
         }
     }
 
+    // Action
     func pressButton(digit: String) {
+        notifyListerners(digit)
+    }
 
+    func notifyListerners(_ digit: String) {
+        let button = buttons[digit]
+        button?.update(msg: digit)
     }
 }

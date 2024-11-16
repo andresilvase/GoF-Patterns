@@ -1,12 +1,19 @@
 // The Swift Programming Language
 // https://docs.swift.org/swift-book
 
-let string: String = "Hello, world!!!!!"
-var string2: String = ""
+func main() {
+    let phone = Phone()
 
-for i in 0...5 {
-    string2 += "\(i)"
+    let number = "1234567890"
+
+    func call(_ number: String) {
+        for digit in number {
+            phone.pressButton(digit: String(digit))
+        }
+    }
+
+    print("Calling...")
+    call(number)
 }
 
-print(string[string.index(string.startIndex, offsetBy: 0)])
-print(string2.dropFirst(2))
+main()
