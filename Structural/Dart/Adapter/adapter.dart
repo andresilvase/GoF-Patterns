@@ -1,5 +1,5 @@
 import 'adaptee.dart';
-import 'target_interface.dart';
+import 'target.dart';
 
 class CalculatorAdpter implements Calculator {
   late PerformSumAndSubtraction _sumAndSubtraction;
