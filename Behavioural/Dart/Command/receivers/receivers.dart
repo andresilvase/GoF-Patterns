@@ -1,4 +1,4 @@
-import '../receiver.dart';
+import '../interfaces/receiver.dart';
 
 class ButtonWithDigit extends Button {
   final String digit;

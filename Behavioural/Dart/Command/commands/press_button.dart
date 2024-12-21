@@ -1,5 +1,5 @@
-import '../command.dart';
-import '../receiver.dart';
+import '../interfaces/command.dart';
+import '../interfaces/receiver.dart';
 
 class PressButton extends Command {
   final Button button;

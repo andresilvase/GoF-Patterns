@@ -1,5 +1,5 @@
 import 'dart:collection';
-import 'command.dart';
+import 'interfaces/command.dart';
 
 class CommandInvoker {
   Queue<Command> commands = Queue();
