@@ -27,8 +27,6 @@ class AutoSocorro {
         return AutoSocorro(SocorroVeiculoMedioFactory(), veiculo);
       case Porte.grande:
         return AutoSocorro(SocorroVeiculoGrandeFactory(), veiculo);
-      default:
-        throw Exception('Não foi possível identificar o veículo');
     }
   }
 }

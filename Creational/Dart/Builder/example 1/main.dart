@@ -1,27 +1,36 @@
-import 'concrete_builder.dart';
+import 'builders/smaprtphone/concrete_smartphone_builder.dart';
 import 'director.dart';
-import 'object.dart';
+import 'product.dart';
 
+/// In case a [SmartphoneDirector] was not created, is it possible to
+// build kinda 'manually'; however, it is not recommended.
 void runBuilder() {
-  SmartphoneDirector director = SmartphoneDirector(
-    smartphoneConcreteBuilder: ConcreteBuilder(),
-  );
+  SmartphoneDirector director = SmartphoneDirector(smartphoneBuilder: ConcreteSmartphoneBuilder());
 
-  List<Smartphone> xiaomiPhoneCreatedByDirector = [
+  // Creating smartphones by the director
+  List<Product> xiaomiPhoneCreatedByDirector = [
     director.basicSmartphone(),
     director.mediumSmartphone(),
     director.topSmartphone(),
   ];
 
-  // In case a director was not created, is it possible to
-  // build kinda 'manually';
-  ConcreteBuilder builder = ConcreteBuilder();
-  Smartphone createdManually = builder.setSmartphoneName("Xing Ling").setSmartphoneBatterymA(2500).build();
+  // Manually creating a smartphone
+  ConcreteSmartphoneBuilder builder = ConcreteSmartphoneBuilder();
+  Product smartphoneCreatedManually = builder.setSmartphoneName("Xing Ling").setSmartphoneBatterymA(2500).build();
 
+  // Printing all smartphones
   print('\n##Builder running example:');
-  List<Smartphone> allSmartphones = [...xiaomiPhoneCreatedByDirector, createdManually];
+  List<Product> allSmartphones = [
+    ...xiaomiPhoneCreatedByDirector,
+    smartphoneCreatedManually,
+  ];
 
+  print('\nAll smartphones:');
   for (final phone in allSmartphones) {
     print(phone);
   }
+}
+
+void main() {
+  runBuilder();
 }

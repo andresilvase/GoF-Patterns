@@ -1,7 +1,7 @@
-import 'builder_interface.dart';
-import 'object.dart';
+import '../../products/smartphone.dart';
+import 'smartphone_builder.dart';
 
-class ConcreteBuilder implements ObjectBuilder {
+class ConcreteSmartphoneBuilder implements SmartphoneBuilder {
   int? _memoryStorage;
   int? _ramProcessor;
   int? _cameraPxls;
@@ -9,7 +9,7 @@ class ConcreteBuilder implements ObjectBuilder {
   String? _name;
 
   @override
-  ObjectBuilder setSmartphoneName(String name) {
+  SmartphoneBuilder setSmartphoneName(String name) {
     _name = name;
     return this;
   }
@@ -26,25 +26,25 @@ class ConcreteBuilder implements ObjectBuilder {
   }
 
   @override
-  ObjectBuilder setSmartphoneBatterymA(int mA) {
+  SmartphoneBuilder setSmartphoneBatterymA(int mA) {
     _batterymA = mA;
     return this;
   }
 
   @override
-  ObjectBuilder setSmartphoneCameraPxls(int pixels) {
+  SmartphoneBuilder setSmartphoneCameraPxls(int pixels) {
     _cameraPxls = pixels;
     return this;
   }
 
   @override
-  ObjectBuilder setSmartphoneMemoryStorage(int memoryStorage) {
+  SmartphoneBuilder setSmartphoneMemoryStorage(int memoryStorage) {
     _memoryStorage = memoryStorage;
     return this;
   }
 
   @override
-  ObjectBuilder setSmartphoneRamProcessor(int ramProcessor) {
+  SmartphoneBuilder setSmartphoneRamProcessor(int ramProcessor) {
     _ramProcessor = ramProcessor;
     return this;
   }

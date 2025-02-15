@@ -1,8 +1,10 @@
 import 'dart:convert';
 
+import '../product.dart';
+
 enum SmartphoneEnum { memoryStorage, ramProcessor, cameraPxls, batterymA, name }
 
-class Smartphone {
+class Smartphone extends Product {
   int? memoryStorage;
   int? ramProcessor;
   int? cameraPxls;
