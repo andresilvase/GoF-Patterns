@@ -1,5 +1,5 @@
-import 'builders/smaprtphone/smartphone_builder.dart';
-import 'products/smartphone.dart';
+import '../interfaces/builders/smartphone_builder.dart';
+import '../products/smartphone.dart';
 
 // Optional class: the object construction can be made directly
 class SmartphoneDirector {

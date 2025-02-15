@@ -1,5 +1,5 @@
 import '../../products/smartphone.dart';
-import 'smartphone_builder.dart';
+import '../../interfaces/builders/smartphone_builder.dart';
 
 class ConcreteSmartphoneBuilder implements SmartphoneBuilder {
   int? _memoryStorage;

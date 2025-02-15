@@ -1,4 +1,4 @@
-import '../../builder.dart';
+import '../builder.dart';
 import '../../products/smartphone.dart';
 
 abstract class SmartphoneBuilder implements Builder {
